@@ -8,19 +8,47 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
-<body>
+<body> 
+        <!-- Create a display area on the page for each of the sections (songs, artists & albums). Create a display area on the page for each of the sections (songs, artists & albums). -->
     <header>
         <h1>Laura's Favorite Music</h1>
     </header>
-    <section id="songs"></section>
-    <secton id="artists"></secton>
-    <section id="albums"></section>
+    <section id="songs">
+        <h2>Songs</h2>
+        <article>
+
+        </article>
+    </section>
+    <secton id="artists">
+        <h2>Artists</h2>
+        <article>
+
+        </article>
+    </secton>
+    <section id="albums">
+        <h2>Albums</h2>
+        <article>
+
+        </article>
+    </section>
+    <section id="suggested">
+            <h2>Suggested</h2>
+            <article>
+    
+            </article>
+        </section>
     <section>
         <h2>Suggest a Song</h2>
-        <form>
-
+        <form id="suggestSong">
+            <label for="songTitle">Song Title</label>
+            <input type="text" id="songTitle" class="requiredInput" placeholder="Song Title"></input>
+            <label for="artistName">Artist Name</label>
+            <input type="text" id="artistName" class="requiredInput" placeholder="Artist Name"></input>
+            <label for="albumName">Album Name</label>
+            <imput type="text" id="albumName" class="requiredInput" placeholder="Album Name"></imput>
         </form>
+        <button id="submitSong">Submit the Song</button>
     </section>
-    <script src="main.js"></script>
+    <script src="dist/main_compiled.js"></script>
 </body>
 </html>
