@@ -19,6 +19,7 @@ console.log(songs, artists, albums, suggested);
 //Required Files
 
 let display = require("./_display");
+let modify = require("./_modify");
 
 ///Print to DOM
 display.printArray(songs, songsSection) ;
@@ -27,6 +28,7 @@ display.printArray(albums, albumSection) ;
 display.printArray(suggested, suggestedSection) ;
 
 ///Invert the Data vs Not
+console.log(modify.invertData(songs));
 
 ///Ascending & Descending
 
