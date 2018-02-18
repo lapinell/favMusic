@@ -11,15 +11,15 @@ let albumSection = document.getElementById("albums");
 let suggestedSection = document.getElementById("suggested");
 
 //Parse array
-function printArray(A, sectionName) {
+function printArray(arrayName, sectionName) {
     console.log("parsing array begins");
-    let arrayToParse = A;
-        console.log('array:', A);
+    let arrayToParse = arrayName;
+        console.log('array:', arrayName);
     //For each item in the array, put into it's own p element
-    for(let i = 0; i < A.length; i++) {
-        console.log('item name:', A[i]);
+    for(let i = 0; i < arrayName.length; i++) {
+        console.log('item name:', arrayName[i]);
         let newP = "";
-        let newSong = A[i];
+        let newSong = arrayName[i];
 
         newP += `<p class="song">${newSong}</p>`;
 
