@@ -22,10 +22,10 @@ let display = require("./_display");
 let modify = require("./_modify");
 
 ///Print to DOM
-display.printArray(songs, songsSection) ;
-display.printArray(artists, artistsSection) ;
-display.printArray(albums, albumSection) ;
-display.printArray(suggested, suggestedSection) ;
+// display.verticalArray(songs, songsSection) ;
+display.verticalArray(artists, artistsSection) ;
+display.verticalArray(albums, albumSection) ;
+display.verticalArray(suggested, suggestedSection) ;
 
 ///Invert the Data vs Not
 console.log(modify.invertData(songs));
@@ -37,7 +37,10 @@ console.log(modify.descendingData(artists));
 
 ///Vertical vs Horizontal
 
-///Add modification under h1 tag as h2
+display.horizontalArray(songs, songsSection);
+
+///Add modification description under h1 tag as h2
+
 
 ///Add song to array w/o refreshing page
 

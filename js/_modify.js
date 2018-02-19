@@ -19,9 +19,10 @@ function ascendingData(arrayName) {
 
     let ascendingArray = arrayName.sort();
 
+    console.log('ascending array ends');
+
     return ascendingArray;
 
-    console.log('ascending array ends');
 }
 
 function descendingData(arrayName) {
@@ -29,9 +30,10 @@ function descendingData(arrayName) {
 
     let descendingArray = arrayName.reverse();
 
+    console.log('descending array ends');
+
     return descendingArray;
 
-    console.log('descending array ends');
 }
 
 module.exports = { invertData, ascendingData, descendingData };
