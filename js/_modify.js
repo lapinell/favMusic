@@ -12,11 +12,26 @@ function invertData(arrayName) {
     return reversed;
 }
 
+
+
 function ascendingData(arrayName) {
     console.log('ascending array begins');
 
+    let ascendingArray = arrayName.sort();
 
-    console.log('descending array begins');
+    return ascendingArray;
+
+    console.log('ascending array ends');
 }
 
-module.exports = { invertData };
+function descendingData(arrayName) {
+    console.log('descending array begins');
+
+    let descendingArray = arrayName.reverse();
+
+    return descendingArray;
+
+    console.log('descending array ends');
+}
+
+module.exports = { invertData, ascendingData, descendingData };

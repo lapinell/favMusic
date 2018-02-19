@@ -32,6 +32,9 @@ console.log(modify.invertData(songs));
 
 ///Ascending & Descending
 
+console.log(modify.ascendingData(songs));
+console.log(modify.descendingData(artists));
+
 ///Vertical vs Horizontal
 
 ///Add modification under h1 tag as h2
