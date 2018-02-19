@@ -1,10 +1,9 @@
 "use strict";
 
 //Parse array
-function printArray(arrayName, sectionName) {
-    console.log("parsing array begins");
-    let arrayToParse = arrayName;
-        console.log('array:', arrayName);
+function verticalArray(arrayName, sectionName) {
+    console.log("vertical array begins");
+    console.log('array:', arrayName);
     //For each item in the array, put into it's own p element
     for(let i = 0; i < arrayName.length; i++) {
         console.log('item name:', arrayName[i]);
@@ -15,6 +14,18 @@ function printArray(arrayName, sectionName) {
 
         sectionName.innerHTML += newP;
     }
-    console.log("parsing array ends");
+    console.log("vertical array ends");
 }
-module.exports = { printArray };
+
+function horizontalArray(arrayName, sectionName) {
+    console.log("horizontal array begins");
+    console.log('array:', arrayName);
+    let horzArray = arrayName.join(', ');
+    console.log(horzArray);
+    let newString = `<p> ${ horzArray } </p>`;
+    console.log('newString:', newString);
+    sectionName.innerHTML += newString;
+    console.log("horizontal array ends");
+}
+
+module.exports = { verticalArray, horizontalArray };
