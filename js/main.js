@@ -28,16 +28,16 @@ display.verticalArray(albums, albumSection) ;
 display.verticalArray(suggested, suggestedSection) ;
 
 ///Invert the Data vs Not
-console.log(modify.invertData(songs));
+console.log('invertData Songs:', modify.invertData(songs));
 
 ///Ascending & Descending
 
-console.log(modify.ascendingData(songs));
-console.log(modify.descendingData(artists));
+console.log('ascendingData Songs:', modify.ascendingData(songs));
+console.log('descendingData artists:', modify.descendingData(artists));
 
 ///Vertical vs Horizontal
 
-display.horizontalArray(songs, songsSection);
+// display.horizontalArray(songs, songsSection);
 
 ///Add modification description under h1 tag as h2
 
