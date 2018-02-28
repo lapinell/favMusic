@@ -1,30 +1,32 @@
 "use strict";
 
 function invertData(arrayName) {
-
+    let invArray = arrayName.slice(0);
     //Reverse array
-    let reversed = arrayName.reverse();
+   invArray.reverse();
     // console.log('reversed array:', reversed);
 
-    return reversed;
+    return invArray;
 }
 
-
+function originalData (arrayName) {
+    return arrayName;
+}
 
 function ascendingData(arrayName) {
+    let ascArray = arrayName.slice(0);
+    ascArray.sort();
 
-    let ascendingArray = arrayName.sort();
-
-    return ascendingArray;
+    return ascArray;
 
 }
 
 function descendingData(arrayName) {
+    let descArray = arrayName.slice(0);
+    descArray.sort().reverse();
 
-    let descendingArray = arrayName.reverse();
-
-    return descendingArray;
+    return descArray;
 
 }
 
-module.exports = { invertData, ascendingData, descendingData };
+module.exports = { invertData, originalData, ascendingData, descendingData };

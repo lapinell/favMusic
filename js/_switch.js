@@ -10,15 +10,43 @@ let none = document.getElementById("none");
 let vert = document.getElementById("vert");
 let horz = document.getElementById("horz");
 
+//if vertical is chosen, then modify this way; else modify that way
+//if horizontal is chose, modify this way; else that way
+
+
 //Radio Button Event Listeners
-asc.addEventListener("change", function() {console.log('asc selected');});
 
-desc.addEventListener("change", function() {console.log('desc selected');});
+none.addEventListener("click", function(){
+    display.verticalArray( 
+        modify.originalData( 
+            data.songs()
+        ),
+        data.songsSection()
+    );
+});
 
-none.addEventListener("change", function() {console.log('none selected');});
+asc.addEventListener("click", function(){
+    display.verticalArray( 
+        modify.ascendingData( 
+            data.songs()
+        ),
+        data.songsSection()
+    );
+});
 
-vert.addEventListener("change", function() {console.log('vert selected');});
+desc.addEventListener("click", function(){
+    display.verticalArray( 
+        modify.descendingData( 
+            data.songs()
+        ),
+        data.songsSection()
+    );
+});
 
-horz.addEventListener("change", function() {console.log('horz selected');});
+
+
+horz.addEventListener("click", function() {
+    console.log('horz selected');
+});
 
 

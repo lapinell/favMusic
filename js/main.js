@@ -10,11 +10,13 @@ console.log(data.songs(), data.artists(), data.albums(), data.suggested());
 //Required Files
 
 let display = require("./_display");
-let modify = require("./_modify");
-let change = require("./_switch");
+
 
 ///Print to DOM
-// display.verticalArray(songs, songsSection) ;
-display.verticalArray(data.artists(), data.artistsSection()) ;
-display.verticalArray(data.albums(), data.albumSection()) ;
-display.verticalArray(data.suggested(), data.suggestedSection()) ;
+display.verticalArray(data.songs(), data.songsSection());
+// display.verticalArray(data.artists(), data.artistsSection()) ;
+// display.verticalArray(data.albums(), data.albumSection()) ;
+// display.verticalArray(data.suggested(), data.suggestedSection()) ;
+
+let modify = require("./_modify");
+let change = require("./_switch");
