@@ -20,6 +20,7 @@ console.log(songs, artists, albums, suggested);
 
 let display = require("./_display");
 let modify = require("./_modify");
+let change = require("./_switch");
 
 ///Print to DOM
 // display.verticalArray(songs, songsSection) ;
